@@ -58,8 +58,8 @@ for(const bt of baton){
         incremnt.innerText=convInc+1;
         bt.setAttribute('disabled','true');
         bt.style.backgroundColor="lightgray";
-        const titleAdd=bt.parentNode.parentNode.firstElementChild.innerText;
-
+        const titleAdd=bt.parentNode.parentNode.firstElementChild.nextElementSibling.innerText;
+        
         let remm=document.getElementById('allrem');
 
         let creteSec=document.createElement('section');

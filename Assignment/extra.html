@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blogs</title>
     <!--?Google front -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,7 +36,7 @@
     </style>
 
 </head>
-<body class="popin bg-slate-600">
+<body class="popin bg-[#F4F7FF]">
     <header class=" py-5">
         <nav class="flex justify-between p-6 items-center   container mx-auto bg-white rounded-2xl">
             <div class="flex gap-4 items-center">
@@ -51,37 +51,136 @@
     <section class="container mx-auto text-center pb-5">
             <h1 class="text-4xl font-bold">Blogs</h1>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <main class="container mx-auto pb-14 space-y-5">
 
         <!-- 1 no question -->
         <div class="bg-white rounded-xl">
             <h3 class="p-5 text-xl font-semibold border-b-2 border-dashed">Question-1: What are the different ways to select an element in the DOM?</h3>
-            <p class="p-5 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, ea!</p>
+            <p class="p-5 text-gray-500 ">1.যে যে উপায়ে DOM  এ elements select বা access করা যায় :</p>
+            <div class="px-5 pb-5">
+                    <ul class="list-disc px-5">
+                        <li>getElementsByTagName(' ')</li>
+                        <li>getElementsByClassName( '')</li>
+                        <li>getElementById(' ')</li>
+                        <li>querySelectorAll(' ')</li>
+                        <li>querySelector(' ')</li>
+                    </ul>
+            </div>
         </div>
+
+
+
+
 
         <!-- 2 no question -->
         <div class="bg-white rounded-xl">
             <h3 class="p-5 text-xl font-semibold border-b-2 border-dashed">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
-            <p class="p-5 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, ea!</p>
+            <p class="p-5 text-gray-500">2.innerHTML,innerText এবং textContent এর মধ্যে পার্থক্য :</p>
+            <div class="px-5">
+                    <p>innerHTML এমন এক property যা দিয়ে documents এর কোন elements এর ভিতরের সব কনটেন্ট নিয়ে আসা যায় এবং নিয়ে আসা কনটেন্ট পরিবর্তন করা যায়।</p>
+                    <p>innerText যা এমন এক property যা দিয়ে documents এর কোন elements এর ভিতরের text কে access করা যায় এবং পরিবর্তন করা যায়।</p>
+                    <p>Textcontent যা এমন এক property যা দিয়ে documents এর কোন elements এর ভিতরের সব text কে access করা যায় এবং পরিবর্তন করা যায় যদি সেটি css দিয়ে visibility:hidden বা display:none ও করা থাকে</p>
+            </div>
         </div>
+
+
+
+
 
         <!-- 3 no question -->
         <div class="bg-white rounded-xl">
             <h3 class="p-5 text-xl font-semibold border-b-2 border-dashed">Question-3: What is event delegation in the DOM?</h3>
-            <p class="p-5 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, ea!</p>
+            <p class="p-5 text-gray-500">3.DOM এ event delegation হলো :</p>
+            <div class="px-5">
+                <p>Event delegation এমন এক প্রক্রিয়া যা কোনো parent  এ event listener যোগ করলে ঐ parent এর সকল child এ ঐ event কাজ করবে।</p>
+            </div>
         </div>
+
+
+
+
 
         <!-- 4 no question -->
         <div class="bg-white rounded-xl">
             <h3 class="p-5 text-xl font-semibold border-b-2 border-dashed">Question-4: What is event bubbling in the DOM?</h3>
-            <p class="p-5 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, ea!</p>
+            <p class="p-5 text-gray-500">4.DOM এ event bubbling হলো :</p>
+            <div class="px-5">
+                <p>Event bubbling এমন এক প্রক্রিয়া যেখানে একটি event তার target elements কে খুজবে  এবং target element এ গিয়ে event ঘটবে। তারপর parent element গুলোর দিকে propagate করবে।</p>
+            </div>
         </div>
+
+
+
+
 
         <!-- 5 no question -->
         <div class="bg-white rounded-xl">
             <h3 class="p-5 text-xl font-semibold border-b-2 border-dashed">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
-            <p class="p-5 text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, ea!</p>
+            <p class="p-5 text-gray-500">5.Javascript দিয়ে যেভাবে elements create,add এবং remove করা যায় :</p>
+            <div class="px-5">
+                <p>ID দিয়ে parent element ধরা :</p>
+                <p>const child=document.getElementById('parent');</p><br>
+
+                <p>New element create করা :</p>
+                <p>const newsec=document.createElement('section');</p><br>
+
+                <p>Parent element এ new element যোগ করা :</p>
+                <p>child.appendChild(newsec);</p><br>
+
+                <p>Main parent থেকে parent element কে remove  করা :</p>
+                <p>child.parentNode.removeChild(child);</p>
+            </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </main>
 
