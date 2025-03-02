@@ -1,3 +1,4 @@
+
 // theme change
 let a=0;
 const btn=document.getElementById("colorChange").addEventListener('click',function(event){
@@ -47,6 +48,7 @@ for(const bt of baton){
         const dicremnt=document.getElementById("dicrement");
         const convInc=parseInt(incremnt.innerText);
         const convDic=parseInt(dicremnt.innerText);
+        let upt=new Date();
 
         alert("Board updated Successfully");
         if(convDic===1){
@@ -58,13 +60,18 @@ for(const bt of baton){
         bt.style.backgroundColor="lightgray";
         const titleAdd=bt.parentNode.parentNode.firstElementChild.innerText;
 
-        const remm=document.getElementById('allrem');
+        let remm=document.getElementById('allrem');
 
-        const creteSec=document.createElement('section');
-        creteSec.innerHTML=`<p class="text-base font-normal rounded-lg p-2 mb-7 bg-[#F4F7FF]">You have Complete The Task ${titleAdd}</p>`
+        let creteSec=document.createElement('section');
+        creteSec.innerHTML=`<p class="text-base font-normal rounded-lg p-2 mb-7 bg-[#F4F7FF]">You have Complete The Task ${titleAdd} at ${upt.toLocaleTimeString()}</p>`
         remm.appendChild(creteSec);
     });
 }
+
+// New date
+let newTime=new Date();
+document.getElementById('dday').innerText=newTime.toDateString().split(" ")[0]+' ,';
+document.getElementById('ddate').innerText=newTime.toDateString().substring(4);
 // Activity clear
 const refreash=document.getElementById("remBtn");
 refreash.addEventListener('click',function(){
@@ -73,3 +80,4 @@ refreash.addEventListener('click',function(){
         rem.removeChild(rem.firstChild);
     }
 })
+
