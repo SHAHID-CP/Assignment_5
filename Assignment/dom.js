@@ -33,10 +33,7 @@ switch (a) {
 document.getElementById("changePage").addEventListener("click",function(){
     window.location.href ="extra.html";
 })
-// document.getElementById("extraChange").addEventListener("click",function(){
-//     window.location.href ="index.html";
-//     console.log("shahidd");
-// })
+
 
 // Button dynamic
 const baton=document.getElementsByClassName("dyBtn");
